@@ -35,10 +35,13 @@ public class CacheSimulator {
         CacheSet set = cache.sets[setIndex];
         boolean hit = false;
 
+        System.out.printf("%c %x, %d ", op, operationAddress, size);
+
         for (CacheLine line : set.lines) {
             if (line.valid && line.tag == tag) {
                 hits++;
                 hit = true;
+                System.out.println("\n  Hit");
                 break;
             }
         }
@@ -46,12 +49,14 @@ public class CacheSimulator {
         if (!hit) {
             misses++;
             boolean placed = false;
+            System.out.println("\n  Miss");
             for (CacheLine line : set.lines) {
                 if (!line.valid) {
                     line.valid = true;
                     line.tag = tag;
                     placed = true;
                     loadFromRAM(line, operationAddress, cache.blockSize);
+                    System.out.printf("  Place in set %d\n", setIndex);
                     break;
                 }
             }
@@ -63,11 +68,13 @@ public class CacheSimulator {
                 set.lines[set.lines.length - 1] = line;
                 line.tag = tag;
                 loadFromRAM(line, operationAddress, cache.blockSize);
+                System.out.printf("  Evict line in set %d, place in set %d\n", setIndex, setIndex);
             }
         }
 
         if (op == 'S' && data != null) {
             writeToRAM(operationAddress, data);
+            System.out.println("  Store in cache and RAM");
         }
     }
 
@@ -102,7 +109,7 @@ public class CacheSimulator {
             while (raf.getFilePointer() < raf.length()) {
                 int data = raf.readInt();
                 ram.put(address, data);
-                address += 4;
+                address += 8; // Increment by 8 bytes as per your project specifications
             }
         } catch (IOException e) {
             e.printStackTrace();

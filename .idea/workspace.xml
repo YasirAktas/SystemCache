@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a34fe006-6e31-4b2f-8016-34b1f527f997" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test1.trace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a34fe006-6e31-4b2f-8016-34b1f527f997" name="Changes" comment="cache'in son halini txt ye yazıyor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAM.dat" beforeDir="false" afterPath="$PROJECT_DIR$/RAM.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CacheLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CacheLine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CacheSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CacheSimulator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +67,7 @@
     <configuration name="CacheSimulator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CacheSimulator" />
       <module name="SystemCache" />
-      <option name="PROGRAM_PARAMETERS" value="-s 0 -E 2 -b 3 -t test1.trace" />
+      <option name="PROGRAM_PARAMETERS" value="-s 0 -E 2 -b 3 -t test.trace" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,6 +88,15 @@
       <workItem from="1717278960293" duration="1650000" />
       <workItem from="1717319428201" duration="239000" />
     </task>
+    <task id="LOCAL-00001" summary="cache'in son halini txt ye yazıyor">
+      <option name="closed" value="true" />
+      <created>1717322102691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717322102691</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +115,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="cache'in son halini txt ye yazıyor" />
+    <option name="LAST_COMMIT_MESSAGE" value="cache'in son halini txt ye yazıyor" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
