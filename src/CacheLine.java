@@ -8,7 +8,6 @@ class CacheLine {
         data = new byte[blockSize];
     }
 }
-
 class CacheSet {
     CacheLine[] lines;
 
